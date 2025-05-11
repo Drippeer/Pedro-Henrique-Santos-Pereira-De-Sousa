@@ -1,4 +1,4 @@
-// Comentário: Espera o DOM (Document Object Model) estar completamente carregado antes de executar o script.
+
 document.addEventListener('DOMContentLoaded', function() {
 
     // Comentário: Lógica para o formulário de contato (apenas para evitar o envio padrão).
