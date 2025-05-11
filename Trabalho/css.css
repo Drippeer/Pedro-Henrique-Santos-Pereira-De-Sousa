@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pra padding e borda não bagunçarem o tamanho das coisas */
+}
+
+/* Estilos gerais do site todo */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra padrão */
+    line-height: 1.6; /* Espaço entre as linhas do texto */
+    color: #333; /* Cor principal do texto */
+    background-color: #f4f4f4; /* Corzinha de fundo suave */
+    padding-top: 80px; /* Espacinho em cima se o menu for fixo. Se não for, pode tirar. */
+}
+
+/* Estilo do cabeçalho lá de cima */
+header {
+    background-color: #333; /* Fundo escuro pro cabeçalho */
+    color: #fff; /* Letra branca no cabeçalho */
+    padding: 20px 0;
+    text-align: center; /* Tudo centralizado */
+
+    /*
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    */
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #444; /* Fundo um pouco mais claro pro menu */
+    padding: 10px 0;
+    text-align: center;
+    
+   
+}
+
+nav ul {
+    list-style-type: none; /* Tira as bolinhas da lista do menu */
+}
+
+nav ul li {
+    display: inline; /* Itens do menu um do lado do outro */
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* O último item não precisa de margem à direita */
+}
+
+nav ul li a {
+    color: #fff; /* Cor dos links do menu */
+    text-decoration: none; /* Tira o sublinhado dos links */
+    font-weight: bold; /* Letra em negrito */
+    padding: 5px 10px;
+    border-radius: 4px; /* Cantinhos arredondados */
+    transition: background-color 0.3s ease; /* Efeitinho suave quando passa o mouse */
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #5cb85c; /* Corzinha verde pra destacar */
+    color: #fff;
+}
+
+
+main {
+    max-width: 960px; /* Largura máxima pra não ficar muito largão */
+    margin: 20px auto; /* Centraliza na tela e dá um respiro em cima e embaixo */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco pra área de conteúdo */
+    border-radius: 5px; /* Cantinhos arredondados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombrinha leve pra dar um tchan */
+}
+
+/* Estilo das seções <section> dentro de cada página */
+section {
+    padding: 20px 0; /* Espacinho dentro da seção */
+    border-bottom: 1px solid #eee; /* Linha fininha pra separar, se quiser */
+}
+
+/* Tira a borda da última seção da página, se tiver mais de uma */
+main section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5cb85c; /* Linha verde embaixo do título da seção */
+}
+
+/* Coisas específicas pros itens do portfólio */
+.portfolio-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Um fundo um pouquinho diferente pro item */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.portfolio-item a { /* Link dentro do item do portfólio */
+    color: #5cb85c; /* Verde também */
+    text-decoration: none;
+    font-weight: bold;
+}
+.portfolio-item a:hover {
+    text-decoration: underline; /* Sublinha quando passa o mouse */
+}
+
+/* Estilo do formulário de contato */
+#form-contato div {
+    margin-bottom: 15px; /* Espacinho entre os campos */
+}
+
+#form-contato label {
+    display: block; /* Faz o nome do campo (label) ficar numa linha só */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-contato input[type="text"],
+#form-contato input[type="email"],
+#form-contato textarea {
+    width: 100%; /* Campos ocupam a largura toda */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif; /* Mesma fonte do resto */
+}
+
+#form-contato textarea {
+    resize: vertical; /* Deixa aumentar a altura da caixa de mensagem */
+}
+
+#form-contato button[type="submit"] { /* Botão de enviar */
+    background-color: #5cb85c; /* Verde nele! */
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Sem borda no botão */
+    border-radius: 4px;
+    cursor: pointer; /* Mostra a mãozinha pra clicar */
+    font-size: 16px;
+}
+
+#form-contato button[type="submit"]:hover {
+    background-color: #4cae4c; /* Um verde um pouco mais escuro quando passa o mouse */
+}
+
+/* Estilo do rodapé, lá no finalzão da página */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333; /* Fundo escuro igual ao cabeçalho */
+    color: #fff; /* Letra branca */
+    font-size: 0.9em; /* Letra um pouquinho menor */
+}
+
+/* Ajustes pra telas menores (celular, tablet) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Itens do menu um embaixo do outro */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    
+    body {
+        padding-top: 0;
+    }
+
+    
+}

@@ -1,0 +1,67 @@
+/* Estilos bem básicos para a página do Sae */
+
+body {
+    font-family: Arial, sans-serif; /* Uma fonte simples e legível */
+    line-height: 1.6; /* Espaçamento entre linhas para facilitar a leitura */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Um cinza bem clarinho para o fundo */
+    color: #333; /* Cor do texto principal */
+}
+
+.container {
+    width: 80%; /* Largura do conteúdo principal */
+    max-width: 900px; /* Largura máxima para não ficar muito esticado em telas grandes */
+    margin: 20px auto; /* Centraliza o container e dá um espaço em cima/baixo */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para a área de conteúdo */
+    border-radius: 5px; /* Cantinhos levemente arredondados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Uma sombrinha leve */
+}
+
+header h1 {
+    color: #1a5c2f; /* Um verde escuro, lembrando um campo ou cores associadas a ele */
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0; /* Linha sutil abaixo do título */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c7a48; /* Um tom de verde um pouco mais claro para os subtítulos */
+    margin-top: 30px; /* Espaço antes de cada seção */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px; /* Espaço abaixo dos parágrafos */
+}
+
+ul {
+    list-style-type: disc; /* Estilo de bolinha padrão para listas */
+    padding-left: 20px; /* Recuo para a lista */
+}
+
+ul li {
+    margin-bottom: 5px; /* Espacinho entre os itens da lista */
+}
+
+strong {
+    color: #333; /* Deixa o texto em negrito um pouco mais destacado */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9em;
+    color: #777;
+    /* ... (código CSS anterior) ... */
+}
+
+
+
+
