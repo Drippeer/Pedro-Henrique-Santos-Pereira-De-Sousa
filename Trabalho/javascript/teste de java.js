@@ -17,18 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    // Comentário Opcional: Se quisesse destacar o link ativo via JS (mais avançado, mas mais flexível)
-    // Poderia ser algo como:
-    /*
-    const currentPage = window.location.pathname.split("/").pop(); // Pega o nome do arquivo da URL atual
-    const navLinks = document.querySelectorAll('nav ul li a.nav-link');
-
-    navLinks.forEach(link => {
-        link.classList.remove('active'); // Remove active de todos
-        if (link.getAttribute('href') === currentPage || (currentPage === '' && link.getAttribute('href') === 'index.html')) {
-            link.classList.add('active'); // Adiciona active ao link da página atual
-        }
-    });
-    */
-    // Para este exercício, manter a classe 'active' diretamente no HTML de cada página é mais simples e atende.
+    
 });
